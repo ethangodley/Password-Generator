@@ -35,6 +35,11 @@ function generatePW() {
   const upper = window.confirm("Include upper-case?");
   const number = window.confirm("Include numbers?");
   const special = window.confirm("Include special?");
+  if(lower === false && upper === false && number === false && special === false) {
+    confirm("error, please include atleast one character");
+    generatePW();
+  }
+  else {
 
   // sets character selection string to empty
   let charSelections = "";
@@ -59,6 +64,7 @@ function generatePW() {
   }
   // returns completed random password
   return password;
+  }
 }
 function writePassword() {
   // calls upon generatePW function
