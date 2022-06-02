@@ -59,4 +59,12 @@ function selectPWLength() {
     // returns completed random password
     return password;
   }
+  function writePassword() {
+    // calls upon generatePW function
+    const password = generatePW();
+    //links passwordText variable to password id in HTML file
+    const passwordText = document.querySelector("#password");
+  // sets value of passwordText to equal completed random password which will now display on screen
+    passwordText.value = password;
+  }  
 }
