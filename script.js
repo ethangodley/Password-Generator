@@ -59,6 +59,7 @@ function selectPWLength() {
     // returns completed random password
     return password;
   }
+  // function displays generated password to screen in allocated box
   function writePassword() {
     // calls upon generatePW function
     const password = generatePW();
