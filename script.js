@@ -2,7 +2,7 @@
 const generateButton = document.querySelector("#generate");
 // WHEN user clicks button writePassword function is called
 generateButton.addEventListener('click', function(event) {
-  const passwordLength = writePassword();
+  writePassword();
 });
 
 // function selects password length
